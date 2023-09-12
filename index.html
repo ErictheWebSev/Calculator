@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/" name="calc">
+            <input type="text" name="display" id="display" placeholder="0">
+            <table>
+                <tr>
+                    <td><input type="reset" class="btn cbtn" value="AC"></td>
+                    <td><input type="button" class="btn cbtn" value="DC"></td>
+                    <td><input type="button" class="btn cbtn" value="%" onclick=""></td>
+                    <td><input type="button" class="btn cbtn" value="/" onclick=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="7" onclick=""></td>
+                    <td><input type="button" class="btn" value="8" onclick=""></td>
+                    <td><input type="button" class="btn" value="9" onclick=""></td>
+                    <td><input type="button" class="btn cbtn" value="*" onclick=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="4" onclick=""></td>
+                    <td><input type="button" class="btn" value="5" onclick=""></td>
+                    <td><input type="button" class="btn" value="6" onclick=""></td>
+                    <td><input type="button" class="btn cbtn" value="-" onclick=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="1" onclick=""></td>
+                    <td><input type="button" class="btn" value="2" onclick=""></td>
+                    <td><input type="button" class="btn" value="3" onclick=""></td>
+                    <td><input type="button" class="btn cbtn" value="+" onclick=""></td>
+                </tr>
+                <td><input type="button" class="btn" value="0" onclick=""></td>
+                <td><input type="button" class="btn" value="00" onclick=""></td>
+                <td><input type="button" class="btn" value="." onclick=""></td>
+                <td><input type="button" class="btn cbtn" value="=" onclick="calculateResult()"></td>
+            </table>
+        </form>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
