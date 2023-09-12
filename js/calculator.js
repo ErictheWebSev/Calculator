@@ -8,7 +8,7 @@ function addToDisplay(value) {
 function calculateResult() {
     let display = document.getElementById("display");
     try {
-        display.value = formatNumber(eval(display.value));
+        display.value = eval(display.value);
     } catch(error) {
         display.value = 'Error 😳';
       console.log(error);
@@ -16,10 +16,6 @@ function calculateResult() {
     updateDisplayFontSize();
 }
 
-// Function to format numbers with commas
-function formatNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 // Function to delete the last character from the display
 function deleteCharacter() {
